@@ -1,220 +1,221 @@
 /*GENERAL*/
 
-.wrapper,
-.top-bar,
-.vitality-hero,
-.connection-hero,
-.contribution-hero {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
+@font-face {
+  font-family: "HelloStockholm";
+  src: url(../assets/HelloStockholm-Alt.ttf) format("truetype");
+}
+
+.wrapper, .definition {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .title {
-  font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 p {
-  font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
+
 /*NAV DESKTOP*/
-.top-bar,
-.top-bar .menu {
+
+.top-bar, .top-bar .menu {
     background-color: #fff;
 }
 
+.title-bar {
+  width: 100%;
+}
+
 nav ul {
-  font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .logo {
-  width: 35px;
-  height: 35px;
+    width: 35px;
+    height: 35px;
 }
 
 
 /*HERO*/
 
-.vitality-hero,
-.connection-hero,
-.contribution-hero {
-  height: 60vh;
-  padding-top: 20px;
-}
-
-.main-hero,
-.vitality-hero,
-.connection-hero,
-.contribution-hero {
+.main-hero, .vitality-hero, .connection-hero, .contribution-hero {
+  align-items: left;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  opacity: 0.9;
 }
 
+.vitality-hero, .connection-hero, .contribution-hero {
+    height: 60vh;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 1180px;
+}
+
+.page-title {
+  text-align: center;
+  font-family: "HelloStockholm";
+  letter-spacing: 10px;
+}
+
+
 .main-hero {
-  height: 95vh;
+    height: 95vh;
 }
 
 .vitality-hero {
-  background: linear-gradient(
-                     rgba(20,20,20, .5),
-                     rgba(20,20,20, .5)),
-                     url("../img/vitality-hero.jpg") center no-repeat;
-  background-size: cover;
+    background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url("../img/vitality-hero.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .connection-hero {
-  background: linear-gradient(
-                     rgba(20,20,20, .5),
-                     rgba(20,20,20, .5)),
-                     url("../img/connection-hero.jpeg") center no-repeat;
-  background-size: cover;
+    background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url("../img/connection-hero.jpeg") center no-repeat;
+    background-size: cover;
 }
 
 .contribution-hero {
-  background: linear-gradient(
-                     rgba(20,20,20, .5),
-                     rgba(20,20,20, .5)),
-                     url("../img/contribution-hero.jpeg") center no-repeat;
-  background-size: cover;
+    background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url("../img/contribution-hero.jpeg") center no-repeat;
+    background-size: cover;
 }
 
 .hero-font {
-  padding-left: 50px;
-  font-size: 125px;
-  font-family: 'Fjalla One', sans-serif;
+    padding-left: 50px;
+    font-size: 125px;
+    font-family: 'Fjalla One', sans-serif;
 }
+
+
 /*CONTENT*/
 
-.content {
-  width: 100%;
+.definition {
+  margin-top: 20px;
+}
 
+.content {
+    width: 100%;
 }
 
 h2 {
-  text-align: center;
-  font-family: 'Fjalla One', sans-serif;
-  margin: 10% 0 10% 0;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 10% 0 10% 0;
 }
 
 .title {
-  margin: 5% 0 5% 0;
+    margin: 5% 0 5% 0;
 }
 
-.title,
+.title {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
 .page-title {
-  text-align: center;
-  font-family: 'Fjalla One', sans-serif;
+    font-size: 8em;
 }
 
-.page-title {
-  font-size: 8em;
+.section a, .section p {
+    color: white;
+    text-align: left;
 }
 
-.section a,
-.section p {
-  color: white;
-  text-align: left;
-}
-
-#vitality,
-#connection,
-#contribution {
-  height: 95vh;
-  color: #fff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
+#vitality, #connection, #contribution {
+    align-items: left;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: center;
+    opacity: 0.9;
 }
 
 #vitality {
-  background: url("../img/vitality.jpg") center no-repeat;
+    background: url("../img/vitality.jpg") center no-repeat;
     background-size: cover;
 }
 
 #connection {
-  background: linear-gradient(
-                     rgba(20,20,20, .5),
-                     rgba(20,20,20, .5)),
-                     url("../img/connection.jpeg") center no-repeat;
-  background-size: cover;
-  background-position: right 20px left 5px top 20px;
-
+    background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url("../img/connection.jpeg") center no-repeat;
+    background-size: cover;
+    background-position: right 20px left 5px top 20px;
 }
 
 #contribution {
-  background: url("../img/contribution.jpg") center no-repeat;
-  background-size: cover;
+    background: url("../img/contribution.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .section {
-  padding: 20px;
+    padding: 20px;
 }
 
 .description {
-  display: block;
-  float: left;
-  padding: 20px;
-  font-size: 1em;
+    display: block;
+    float: left;
+    padding: 20px;
+    font-size: 1em;
 }
+
 
 /*VITALITY*/
 
 .list {
-  font-family: 'Roboto Slab', serif;
-  list-style: none;
-  text-align: center;
-  text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
 }
-
 
 .benefits {
-  margin-top: 15%;;
+  padding: 10%;
 }
 
+
 /*FOOTER*/
+
 footer {
-  background-color: #222;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 20px 0;
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
 }
 
 #copyright {
-  background-color: #222;
-  color: rgba(255, 255, 255, 0.8);
-  font-family: 'Oswald', sans-serif;
-  margin: 0 auto;
-
-  text-align: center;
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    text-align: center;
 }
+
 
 /*************************
 MEDIA QUERY
 *************************/
-/*if 640px or lower then true*/
-@media (max-width: 640px) {
 
-  .menu {
-    display: flex;
-    justify-content: center;
-  }
-  .logo {
-    margin: 0 auto;
-  }
+
+/*if 640px or lower then true*/
+
+@media (max-width: 640px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 875px) {
-  .hero {
-    height: 50vh;
-  }
-
-  .hero-font {
-    font-size: 3em;
-  }
-
+    .hero {
+        height: 50vh;
+    }
+    .hero-font {
+        font-size: 3em;
+    }
 }
