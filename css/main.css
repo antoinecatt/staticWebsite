@@ -1,8 +1,8 @@
 /*GENERAL*/
 
 @font-face {
-  font-family: "HelloStockholm";
-  src: url(../assets/HelloStockholm-Alt.ttf) format("truetype");
+    font-family: "HelloStockholm";
+    src: url(../assets/HelloStockholm-Alt.ttf) format("truetype");
 }
 
 .wrapper, .definition {
@@ -11,12 +11,39 @@
     margin: 0 auto;
 }
 
-.title {
+.title, .definition {
     font-family: 'Pathway Gothic One', sans-serif;
 }
 
 p {
     font-family: 'Roboto Slab', serif;
+}
+
+.toc {
+    background-color: #efefef;
+}
+
+.toc-tile {
+    margin-bottom: 5%;
+}
+
+.toc-title {
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+}
+
+.summary {
+    padding: 5%;
+}
+
+.divider {
+    height: 1px;
+    border: 0px;
+    max-width: 970px;
+    background: #e5e5e5;
+    margin: 50px auto;
+    position: relative
 }
 
 
@@ -27,7 +54,7 @@ p {
 }
 
 .title-bar {
-  width: 100%;
+    width: 100%;
 }
 
 nav ul {
@@ -43,27 +70,19 @@ nav ul {
 /*HERO*/
 
 .main-hero, .vitality-hero, .connection-hero, .contribution-hero {
-  align-items: left;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  opacity: 0.9;
+    align-items: left;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.9;
 }
 
 .vitality-hero, .connection-hero, .contribution-hero {
     height: 60vh;
     padding-top: 20px;
     margin: 0 auto;
-    width: 1180px;
 }
-
-.page-title {
-  text-align: center;
-  font-family: "HelloStockholm";
-  letter-spacing: 10px;
-}
-
 
 .main-hero {
     height: 95vh;
@@ -72,6 +91,24 @@ nav ul {
 .vitality-hero {
     background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url("../img/vitality-hero.jpg") center no-repeat;
     background-size: cover;
+}
+
+#fitness-hero {
+    background: url("../img/fitness-section.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#nutrition-hero {
+    background: url("../img/nutrition-section.jpeg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#mentalHealth-hero {
+    background: url("../img/smile.jpeg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .connection-hero {
@@ -90,34 +127,30 @@ nav ul {
     font-family: 'Fjalla One', sans-serif;
 }
 
+.page-title {
+    font-size: 8em;
+    text-align: center;
+}
+
 
 /*CONTENT*/
 
-.definition {
-  margin-top: 20px;
+.definition-box {
+    background-color: #1F1F1F;
+    font-size: 1.25rem;
+    color: white;
+    padding: 3.750em 0;
 }
 
 .content {
-    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
+.title {
     font-family: 'Fjalla One', sans-serif;
     margin: 10% 0 10% 0;
-}
-
-.title {
-    margin: 5% 0 5% 0;
-}
-
-.title {
     text-align: center;
-    font-family: 'Fjalla One', sans-serif;
-}
-
-.page-title {
-    font-size: 8em;
 }
 
 .section a, .section p {
@@ -130,7 +163,7 @@ h2 {
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: 95vh;
+    height: 50vh;
     justify-content: center;
     opacity: 0.9;
 }
@@ -165,6 +198,27 @@ h2 {
 
 /*VITALITY*/
 
+#fitness-section, #nutrition-section, #mentalHealth-section {
+    display: block;
+    height: 200px;
+    position: relative;
+}
+
+#fitness-section {
+    background: url("../img/fitness-section.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#nutrition-section {
+    background: url("../img/nutrition-section.jpeg") center no-repeat;
+    background-size: cover;
+}
+
+#mentalHealth-section {
+    background: url("../img/smile.jpeg") center no-repeat;
+    background-size: cover;
+}
+
 .list {
     font-family: 'Roboto Slab', serif;
     list-style: none;
@@ -173,7 +227,7 @@ h2 {
 }
 
 .benefits {
-  padding: 10%;
+    padding: 10%;
 }
 
 
@@ -217,5 +271,8 @@ MEDIA QUERY
     }
     .hero-font {
         font-size: 3em;
+    }
+    .page-title {
+        font-size: 3rem;
     }
 }
