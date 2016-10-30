@@ -1,3 +1,34 @@
+/*TRANSITION*/
+
+.link {
+  position: relative;
+}
+
+.transition-content {
+  position: absolute;
+}
+
+.top {
+  top: 0;
+}
+.link:hover .top {
+  top: -100px;
+}
+
+.bottom {
+  top: 100px;
+}
+.link:hover .bottom {
+  top: 0;
+}
+
+.transition-content {
+  position: relative;
+  transition: top 0.3s;
+  overflow: hidden;
+}
+
+
 /*GENERAL*/
 
 @font-face {
@@ -7,8 +38,12 @@
 
 .wrapper, .definition {
     width: 90%;
-    max-width: 900px;
+    max-width: 970px;
     margin: 0 auto;
+}
+
+.active {
+  color: #65737e;
 }
 
 .title, .definition {
@@ -44,6 +79,12 @@ p {
     background: #e5e5e5;
     margin: 50px auto;
     position: relative
+}
+
+#fitness-section, #nutrition-section, #mentalHealth-section,#fnf-section, #spirituality-section, #nature-section, #volunteer-section, #job-section, #donate-section {
+    display: block;
+    height: 200px;
+    position: relative;
 }
 
 
@@ -84,36 +125,8 @@ nav ul {
     margin: 0 auto;
 }
 
-.main-hero {
-    height: 95vh;
-}
-
-.vitality-hero {
-    background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url("../img/vitality-hero.jpg") center no-repeat;
-    background-size: cover;
-}
-
-#fitness-hero {
-    background: url("../img/fitness-section.jpg") center no-repeat;
-    background-size: cover;
+.main-hero, #fitness-hero, #nutrition-hero, #mentalHealth-hero, #fnfHero, #spirituality-hero, #nature-hero, #volunteer-hero, #job-hero, #donate-hero{
     height: 100vh;
-}
-
-#nutrition-hero {
-    background: url("../img/nutrition-section.jpeg") center no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-#mentalHealth-hero {
-    background: url("../img/smile.jpeg") center no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.connection-hero {
-    background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url("../img/connection-hero.jpeg") center no-repeat;
-    background-size: cover;
 }
 
 .contribution-hero {
@@ -134,6 +147,10 @@ nav ul {
 
 
 /*CONTENT*/
+
+.main-content {
+  margin: 5%;
+}
 
 .definition-box {
     background-color: #1F1F1F;
@@ -159,7 +176,6 @@ nav ul {
 }
 
 #vitality, #connection, #contribution {
-    align-items: left;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -198,12 +214,6 @@ nav ul {
 
 /*VITALITY*/
 
-#fitness-section, #nutrition-section, #mentalHealth-section {
-    display: block;
-    height: 200px;
-    position: relative;
-}
-
 #fitness-section {
     background: url("../img/fitness-section.jpg") center no-repeat;
     background-size: cover;
@@ -230,6 +240,39 @@ nav ul {
     padding: 10%;
 }
 
+/*CONNECTION*/
+
+#fnf-section {
+    background: url("../img/family-hero.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#spirituality-section {
+  background: url("../img/spirituality-hero.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#nature-section {
+  background: url("../img/nature.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/*CONTRIBUTION*/
+
+#volunteer-section {
+    background: url("../img/volunteer-hero.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#job-section {
+    background: url("../img/work.jpeg") center no-repeat;
+    background-size: cover;
+}
+
+#donate-section {
+    background: url("../img/donate.jpg") center no-repeat;
+    background-size: cover;
+}
 
 /*FOOTER*/
 
@@ -237,6 +280,10 @@ footer {
     background-color: #222;
     color: rgba(255, 255, 255, 0.8);
     padding: 20px 0;
+}
+
+.footer-content {
+      display: inline-block;
 }
 
 #copyright {
